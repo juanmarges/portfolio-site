@@ -85,22 +85,16 @@ a {
     color: set-text-color($primary-color);
 }
 
-// Grid for about.html
+// Grid & Flexbox for about.html
 
 .about-info {
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
-    'bioimage bio'
-    'jheader jheader'
-    'job1 job1'
-    'job2 job2'
-    'job3 job3'
-    'job4 job4'
-    'edheader edheader'
-    'ed1 ed2'
-    'ed3 ed4';
-    grid-template-columns: 1fr 1fr;
+    'bioimage bioimage bio bio'
+    'sheader sheader sheader sheader'
+    'frontend backend mobile other';
+    grid-template-columns: repeat(4,1fr);
 
     .bio-image {
         grid-area: bioimage;
@@ -114,6 +108,60 @@ a {
         grid-area: bio;
         font-size: 1.5rem;
     }
+
+    .skills-header {
+        grid-area: sheader;
+    }
+
+    #front-end {
+        grid-area: frontend;
+    }
+
+    #back-end {
+        grid-area: backend;
+    }
+
+    #mobile {
+        grid-area: mobile;
+    }
+
+    #other {
+        grid-area: other;
+    }
+
+    .skills {
+        background: lighten($primary-color,10);
+        border-bottom: solid 3px $secondary-color;
+        display: inline-block;
+
+        .skill-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+        }
+    }
+}
+
+.skill-img {
+    max-width: 100px;
+}
+
+// Grid for work.html
+
+.work-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'jheader jheader'
+    'job1 job1'
+    'job2 job2'
+    'job3 job3'
+    'job4 job4'
+    'edheader edheader'
+    'ed1 ed2'
+    'ed3 ed4';
+    grid-template-columns: 1fr 1fr;
     
     .job-header {
         grid-area: jheader;
