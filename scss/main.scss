@@ -25,11 +25,6 @@ main {
 
         a {
             padding: 0.4rem;
-
-            &:hover {
-                color: $secondary-color;
-                @include easeOut();
-            }
         }
     }
 
@@ -73,6 +68,16 @@ a {
     color: $secondary-color;
 }
 
+#linkedin:hover {
+    color: rgb(0,119,181);
+    @include easeOut();
+}
+
+#github:hover {
+    color: black;
+    @include easeOut();
+}
+
 #main-footer {
     text-align: center;
     padding: 1rem;
@@ -86,14 +91,22 @@ a {
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
-    'bioimage bio bio'
-    'job1 job2 job3';
-    grid-template-columns: repeat(3,1fr);
+    'bioimage bio'
+    'jheader jheader'
+    'job1 job1'
+    'job2 job2'
+    'job3 job3'
+    'job4 job4'
+    'edheader edheader'
+    'ed1 ed2'
+    'ed3 ed4';
+    grid-template-columns: 1fr 1fr;
 
     .bio-image {
         grid-area: bioimage;
         margin: auto;
-        border-radius: 50%;
+        height: 75%;
+        border-radius: 50px;
         border: solid 3px $secondary-color;
     }
     
@@ -102,6 +115,10 @@ a {
         font-size: 1.5rem;
     }
     
+    .job-header {
+        grid-area: jheader;
+    }
+
     .job-1 {
         grid-area: job1;
     }
@@ -114,11 +131,41 @@ a {
         grid-area: job3;
     }
 
-    .job {
+    .job-4 {
+        grid-area: job4;
+    }
+
+    .job, .ed {
         background: lighten($primary-color,5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+
+        .duration {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
+
+    #ed-header {
+        grid-area: edheader;
+    }
+
+    .ed-1 {
+        grid-area: ed1;
+    }    
+
+    .ed-2 {
+        grid-area: ed2;
+    }  
+
+    .ed-3 {
+        grid-area: ed3;
+    }   
+
+    .ed-4 {
+        grid-area: ed4;
+    }    
 }
 
 @import 'mobile';
