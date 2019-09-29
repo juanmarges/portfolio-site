@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "My portfolio website",
   "main": "index.js",
+  "homepage": "https://juanmarges.github.io/portfolio-site",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass scss/ -o dist/css/ --recursive",
-    "sass-watch": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass-watch": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Juan Marges",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   }
 }
