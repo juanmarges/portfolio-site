@@ -319,7 +319,8 @@ a {
   .menu-nav {
     transform: translate3d(100%, 0, 0);
     height: 75vh;
-    font-size: 20px; }
+    font-size: 20px;
+    overflow: none; }
   .menu-branding {
     transform: translate3d(-100%, 0, 0);
     height: 25vh; }
