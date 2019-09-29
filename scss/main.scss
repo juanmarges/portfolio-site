@@ -130,9 +130,17 @@ a {
     }
 
     .skills {
-        background: lighten($primary-color,10);
+        background: lighten($primary-color,50);
         border-bottom: solid 3px $secondary-color;
         display: inline-block;
+
+        h3 {
+            color: set-text-color($primary-color);
+            font-size: 30px;
+            font-weight: 700;
+            font-family: 'Abel';
+            padding: 5px 15px;
+        }
 
         .skill-icons {
             display: flex;
@@ -144,7 +152,8 @@ a {
 }
 
 .skill-img {
-    max-width: 100px;
+    max-width: 75px;
+    padding-top: 10px;
 }
 
 // Grid for work.html

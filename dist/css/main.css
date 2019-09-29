@@ -194,9 +194,15 @@ a {
   .about-info #other {
     grid-area: other; }
   .about-info .skills {
-    background: #2643a1;
+    background: #a8b8eb;
     border-bottom: solid 3px #f0e110;
     display: inline-block; }
+    .about-info .skills h3 {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 700;
+      font-family: 'Abel';
+      padding: 5px 15px; }
     .about-info .skills .skill-icons {
       display: flex;
       flex-direction: column;
@@ -204,7 +210,8 @@ a {
       padding: 5px; }
 
 .skill-img {
-  max-width: 100px; }
+  max-width: 75px;
+  padding-top: 10px; }
 
 .work-info {
   display: grid;
@@ -270,6 +277,24 @@ a {
     flex-direction: column; }
     .about-info .bio-image {
       width: 150px; }
+    .about-info .skills {
+      background: #a8b8eb;
+      border-bottom: solid 3px #f0e110;
+      margin-bottom: 10px;
+      display: inline-block; }
+      .about-info .skills h3 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Abel';
+        padding: 5px 15px; }
+      .about-info .skills .skill-icons {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap; }
+        .about-info .skills .skill-icons .skill-img {
+          flex: 1 2 33%;
+          padding: 5px; }
   .work-info {
     grid-template-areas: 'jheader' 'job1' 'job2' 'job3' 'job4' 'edheader' 'ed1' 'ed2' 'ed3' 'ed4';
     grid-template-columns: 1fr; } }

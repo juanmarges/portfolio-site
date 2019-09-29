@@ -51,9 +51,35 @@
     .about-info {
         display: flex;
         flex-direction: column;
-        
+
         .bio-image {
             width: 150px;
+        }
+
+        .skills {
+            background: lighten($primary-color,50);
+            border-bottom: solid 3px $secondary-color;
+            margin-bottom: 10px;
+            display: inline-block;
+    
+            h3 {
+                color: set-text-color($primary-color);
+                font-size: 30px;
+                font-weight: 700;
+                font-family: 'Abel';
+                padding: 5px 15px;
+            }
+    
+            .skill-icons {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .skill-img {
+                    flex: 1 2 33%;
+                    padding: 5px;
+                }
+            }
         }
     }
 
