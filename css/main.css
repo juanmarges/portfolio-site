@@ -364,7 +364,9 @@ a {
     grid-template-areas: 'jheader' 'job1' 'job2' 'job3' 'job4' 'edheader' 'ed1' 'ed2' 'ed3' 'ed4';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .job h5, .ed h5 {
+    font-size: 10px; } }
 
 @media screen and (max-width: 500px) {
   main {
