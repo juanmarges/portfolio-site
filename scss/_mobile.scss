@@ -110,6 +110,12 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .job, .ed {
+        h5 {
+            font-size: 10px;
+        }
+    }
 }
 
 // Smartphones
