@@ -193,7 +193,7 @@ a {
     }
 
     .job, .ed {
-        background: lighten($primary-color,5);
+        background: lighten($primary-color,20);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
 
@@ -201,6 +201,15 @@ a {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+        }
+
+        h3 {
+            background: lighten($primary-color,5);
+            font-size: 35px;
+        }
+
+        h5, h6 {
+            font-size: 20px;
         }
     }
 

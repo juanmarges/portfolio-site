@@ -47,6 +47,10 @@
 
 // Menu Overlay
 
+.fixed {
+    overflow: hidden;
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -123,7 +127,7 @@
     .nav-link {
         display: inline-block;
         position: relative;
-        font-size: 30px;
+        font-size: 35px;
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;

@@ -22,6 +22,9 @@
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
+.fixed {
+  overflow: hidden; }
+
 .menu {
   position: fixed;
   top: 0;
@@ -75,7 +78,7 @@
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 35px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -228,13 +231,18 @@ a {
   .work-info .job-4 {
     grid-area: job4; }
   .work-info .job, .work-info .ed {
-    background: #213b8d;
+    background: #2f54cb;
     padding: 0.5rem;
     border-bottom: #f0e110 5px solid; }
     .work-info .job .duration, .work-info .ed .duration {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
+    .work-info .job h3, .work-info .ed h3 {
+      background: #213b8d;
+      font-size: 35px; }
+    .work-info .job h5, .work-info .job h6, .work-info .ed h5, .work-info .ed h6 {
+      font-size: 20px; }
   .work-info #ed-header {
     grid-area: edheader; }
   .work-info .ed-1 {
@@ -307,9 +315,10 @@ a {
   main {
     align-items: center;
     text-align: center; }
-    main .lg-heading {
+    main h1.lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 4rem; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -319,8 +328,7 @@ a {
   .menu-nav {
     transform: translate3d(100%, 0, 0);
     height: 75vh;
-    font-size: 20px;
-    overflow: hidden; }
+    font-size: 20px; }
   .menu-branding {
     transform: translate3d(-100%, 0, 0);
     height: 25vh; }
