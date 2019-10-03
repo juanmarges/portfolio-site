@@ -279,10 +279,56 @@ a {
         }
       }
     }
-  }
+}
+
+// For each individual project
+
+.project-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.project-details {
+    .project-links {
+        display: grid;
+        a {
+            text-align: center;
+            margin: 3px;
+        }
+
+        &#city-flocks {
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        &#hht {
+            grid-template-columns: 1fr;
+        }
+
+        &#bal {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .project-description {
+        background: lighten($primary-color,10);
+
+    }
+
+    .project-screenshots {
+        background: lighten($primary-color,10);
+    }
+}
+
+.screenshot {
+    width: 33%;
+}
   
-  // Button Styles
-  .btn {
+// Button Styles
+
+.btn {
     display: block;
     padding: 0.5rem 1rem;
     border: 0;
@@ -292,7 +338,7 @@ a {
       background: $secondary-color;
       color: set-text-color($secondary-color);
     }
-  }
+}
   
 .btn-dark {
     @extend .btn;
@@ -305,5 +351,4 @@ a {
     background: lighten($primary-color, 50);
     color: #333;
 }
-  
 @import 'mobile';
