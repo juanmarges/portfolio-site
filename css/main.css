@@ -286,6 +286,34 @@ a {
       .boxes div:hover span {
         color: #000; }
 
+.project-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 10px; }
+
+.project-details .project-links {
+  display: grid; }
+  .project-details .project-links a {
+    text-align: center;
+    margin: 3px; }
+  .project-details .project-links#city-flocks {
+    grid-template-columns: repeat(3, 1fr); }
+  .project-details .project-links#hht {
+    grid-template-columns: 1fr; }
+  .project-details .project-links#bal {
+    grid-template-columns: 1fr 1fr; }
+
+.project-details .project-description {
+  background: #2643a1; }
+
+.project-details .project-screenshots {
+  background: #2643a1; }
+
+.screenshot {
+  width: 33%; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
