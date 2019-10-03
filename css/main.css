@@ -184,7 +184,8 @@ a {
     border: solid 3px #f0e110; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    background: #213b8d; }
   .about-info .skills-header {
     grid-area: sheader; }
   .about-info #front-end {
