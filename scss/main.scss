@@ -107,6 +107,7 @@ a {
     .bio {
         grid-area: bio;
         font-size: 1.5rem;
+        background: lighten($primary-color,5);
     }
 
     .skills-header {
